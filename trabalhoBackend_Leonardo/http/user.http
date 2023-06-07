@@ -1,0 +1,34 @@
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "teste@email.com",
+  "password": "SenhaTeste123!"
+}
+
+###
+GET http://localhost:8080/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxfSwiaWF0IjoxNjg2MTQxNTIyfQ.zdzl4YSaoz-R0mdx4kGnVi1T3IqOGmUMmKhpG9jCoGE
+
+### 
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "name": "teste",
+  "email": "teste@gmail.com",
+  "password": "Password123!"
+}
+
+### 
+PUT http://localhost:8080/user/2
+Content-Type: application/json
+
+{
+  "name": "nomeparateste",
+  "email": "teste@gmail.com",
+  "password": "SenhaTeste123!"
+}
+
+### 
+DELETE http://localhost:8080/user/2

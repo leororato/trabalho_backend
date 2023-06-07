@@ -1,0 +1,28 @@
+GET http://localhost:8080/recipes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo2fSwiaWF0IjoxNjg2MTY4NTM3fQ.EABznf1Ig6WZDO4qqIlJpkTuPdLqpxR1WveNXfTbE1U
+
+### 
+POST http://localhost:8080/recipe
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo2fSwiaWF0IjoxNjg2MTY4NTM3fQ.EABznf1Ig6WZDO4qqIlJpkTuPdLqpxR1WveNXfTbE1U
+
+{
+  "name": "Enroladinho",
+  "description": "",
+  "preparationTime": 3
+}
+
+### 
+PUT http://localhost:8080/recipe/5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo2fSwiaWF0IjoxNjg2MTY4NTM3fQ.EABznf1Ig6WZDO4qqIlJpkTuPdLqpxR1WveNXfTbE1U
+
+{
+  "name": "Pão de Queijo",
+  "description": "",
+  "preparationTime": 2
+}
+
+### 
+DELETE http://localhost:8080/recipe/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo2fSwiaWF0IjoxNjg1ODEwMTc0fQ.NkIySvi8MBENpBaRhuakMvTWUSr5BhvPr-ZBUH5u50U
